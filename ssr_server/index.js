@@ -3,5 +3,4 @@ const a = () => {
         <div></div>
     )
 }
-
 a();
