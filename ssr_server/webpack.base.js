@@ -21,7 +21,7 @@ module.exports = {
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
         alias: {
-            "@": path.resolve(process.cwd(), "./src"),
+            "@": path.resolve(process.cwd(), "./src"),      //process.cwd() 是当前Node.js进程执行时的文件夹地址——工作目录
         },
     },
 };

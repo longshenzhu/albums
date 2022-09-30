@@ -6,7 +6,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start:ssr": "cd ssr_server && npx nodemon --watch src ./server_build/bundle.js --ext tsx,ts",
-        "build:ssr_server": "cd ssr_server && npx webpack build --config ./webpack.server.js --watch"
+        "build:ssr_server": "cd ssr_server && npx webpack build --config ./webpack.server.js --watch",
+        "build:ssr_client": "cd ssr_server && npx webpack build --config ./webpack.client.js --watch"
     },
     "keywords": [],
     "author": "",
@@ -33,6 +34,7 @@
     "dependencies": {
         "express": "^4.18.1",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.4.1"
     }
 }
